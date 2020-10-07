@@ -1,0 +1,13 @@
+[Unit]
+Description=Notify when a new Go version is available.
+Documentation=https://github.com/heisantosh/goup
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/bin/bash /home/santosh/lab/goup/goup.sh
+
+[Install]
+WantedBy=multi-user.target
