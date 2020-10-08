@@ -7,7 +7,7 @@ After=network.target
 Type=simple
 Restart=always
 RestartSec=1
-ExecStart=/bin/bash /home/santosh/lab/goup/goup.sh
+ExecStart=goup
 
 [Install]
 WantedBy=multi-user.target
