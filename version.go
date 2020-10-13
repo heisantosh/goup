@@ -85,7 +85,7 @@ func (n *Notifier) onAction(action *notify.ActionInvokedSignal) {
 	}
 }
 
-func main() {
+func main1() {
 	notifier := NewNotifier()
 	defer notifier.Close()
 
