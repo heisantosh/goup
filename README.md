@@ -1,6 +1,6 @@
 # goup
 
-Daemon to alert when new Go version is available for upgrade.
+App to install Go and alert when new Go version is available for upgrade.
 
 ![Notification](https://github.com/heisantosh/goup/raw/main/notification.png "Notification")
 
