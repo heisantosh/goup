@@ -1,3 +1,4 @@
+import 'package:Goup/appbar.dart';
 import 'package:flutter/material.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -11,14 +12,11 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   bool _checkEnabled = false;
   int _checkIntervalDays = 1;
-  final _textController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text(''),
-        ),
+        appBar: createAppBar('Settings'),
         body: Column(
           children: [
             Row(
@@ -87,7 +85,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     setState(
                       () {
                         if (_checkIntervalDays < 2) {
-                          print('max days possible is 1');
+                          print('min days possible is 1');
                           return;
                         }
 

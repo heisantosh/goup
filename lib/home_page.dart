@@ -4,9 +4,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Install or Upgrade"),
-      ),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -18,15 +15,17 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 24, 24, 24),
                   child: RaisedButton(
+                    color: Color.fromRGBO(239, 255, 255, 100),
                     onPressed: () {
                       Navigator.pushNamed(context, '/install');
-                    },
+                    },  
                     child: const Text("Install"),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(24, 24, 0, 24),
                   child: RaisedButton(
+                    color: Color.fromRGBO(239, 255, 255, 100),
                     onPressed: () {
                       Navigator.pushNamed(context, '/upgrade');
                     },
@@ -50,6 +49,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 24, 24, 24),
                   child: RaisedButton(
+                    color: Color.fromRGBO(239, 255, 255, 100),
                     onPressed: () {
                       Navigator.pushNamed(context, '/settings');
                     },
@@ -59,6 +59,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(24, 24, 0, 24),
                   child: RaisedButton(
+                    color: Color.fromRGBO(239, 255, 255, 100),
                     onPressed: () {
                       Navigator.pushNamed(context, '/about');
                     },

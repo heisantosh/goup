@@ -1,12 +1,11 @@
+import 'package:Goup/appbar.dart';
 import 'package:flutter/material.dart';
 
 class UpgradePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Upgrade"),
-      ),
+      appBar: createAppBar('Upgrade'),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

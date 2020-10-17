@@ -1,12 +1,11 @@
+import 'package:Goup/appbar.dart';
 import 'package:flutter/material.dart';
 
 class CheckingVersionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Checking version"),
-      ),
+      appBar: createAppBar('Checking version'),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

@@ -1,3 +1,4 @@
+import 'package:Goup/appbar.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_linkify/flutter_linkify.dart';
@@ -7,9 +8,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("About"),
-      ),
+      appBar: createAppBar('About'),
       body: Container(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
