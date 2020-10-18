@@ -1,4 +1,5 @@
 import 'package:Goup/appbar.dart';
+import 'package:Goup/notification.dart';
 import 'package:flutter/material.dart';
 
 class InstallPage extends StatelessWidget {
@@ -11,6 +12,12 @@ class InstallPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text("Install page"),
+            RaisedButton(
+              child: Text('Notify'),
+              onPressed: () {
+                sendNotification();
+              },
+            ),
           ],
         ),
       ),
