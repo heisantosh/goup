@@ -42,4 +42,19 @@ https://specifications.freedesktop.org/desktop-entry-spec/latest/
 
 * Create a systemd service unit
 
+Notification spec:
+https://developer.gnome.org/notification-spec/
 
+flutter lifecycle package:
+https://pub.dev/packages/flutter_lifecycle/install
+
+https://api.flutter.dev/flutter/widgets/State/dispose.html
+
+Background execution of Dart code:
+https://medium.com/flutter/executing-dart-in-the-background-with-flutter-plugins-and-geofencing-2b3e40a1a124
+
+## Packaging
+On packaging flutter desktop linux apps in formats other than snap:
+https://github.com/google/flutter-desktop-embedding/issues/76
+
+The directory at `build/linux/release/bundle` can be zipped and shared to run as as standalone app. Run `fluter release linux` for building release for linux.

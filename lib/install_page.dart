@@ -3,6 +3,10 @@ import 'package:Goup/notification.dart';
 import 'package:flutter/material.dart';
 
 class InstallPage extends StatelessWidget {
+  final notifier = Notifier.create(() {
+    print('upgrading Go version!');
+  });
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +19,10 @@ class InstallPage extends StatelessWidget {
             RaisedButton(
               child: Text('Notify'),
               onPressed: () {
-                sendNotification();
+                notifier.notify(
+                  'New Go version 1.15.2 available',
+                  'Upgrade to new version?',
+                );
               },
             ),
           ],
