@@ -5,8 +5,19 @@ import 'package:Goup/install_page.dart';
 import 'package:Goup/settings_page.dart';
 import 'package:Goup/upgrade_page.dart';
 import 'package:flutter/material.dart';
+import 'package:args/args.dart';
 
-void main() {
+void main(List<String> args) {
+  print('args: $args');
+  var parser = ArgParser();
+  parser.addFlag('daemon', defaultsTo: false);
+  var results = parser.parse(args);
+
+  if (results['daemon'] == true) {
+    print('running in background...');
+    return;
+  }
+
   runApp(MyApp());
 }
 

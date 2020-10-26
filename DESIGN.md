@@ -42,6 +42,8 @@ https://specifications.freedesktop.org/desktop-entry-spec/latest/
 
 * Create a systemd service unit
 
+https://github.com/canonical/dbus.dart/blob/master/example/signals.dart
+
 Notification spec:
 https://developer.gnome.org/notification-spec/
 
